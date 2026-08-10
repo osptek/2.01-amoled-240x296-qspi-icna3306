@@ -47,6 +47,7 @@ Repo id: `2.01-amoled-240x296-qspi-icna3306`
 <p align="center"><img alt="AM201Q240296LK1" src="./images/AM201Q240296LK1.png" width="320" /></p>
 
 **Notes:** With touch (CST816D).
+
 ---
 
 ## How to Switch Branches
