@@ -2,9 +2,9 @@
 
 <h1 align="center">OSPTEK 2.01″ AMOLED 240×296 (ICNA3306 · QSPI)</h1>
 
-<p align="center"><b>AMOLED module · QSPI · ICNA3306 · capacitive touch</b></p>
+<p align="center"><b>AMOLED module · QSPI · ICNA3306 · Multi-Version Index</b></p>
 
-<p align="center"><a href="./README.md">简体中文</a> | English</p>
+<p align="center">English | <a href="./README.md">简体中文</a></p>
 
 <p align="center">
   <img alt="Size: 2.01 inch" src="https://img.shields.io/badge/Size-2.01%22-3498DB?style=flat-square" />
@@ -13,105 +13,61 @@
   <img alt="Driver: ICNA3306" src="https://img.shields.io/badge/Driver-ICNA3306-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 2.01 inch 240×296 AMOLED QSPI module (ICNA3306) product image" src="./images/product.png" width="640" /></p>
-
 ## Contents
 
-- [Branches](#branches)
-- [Overview](#overview)
-- [Specifications](#specifications)
-- [Sample projects](#sample-projects)
-- [Repository layout](#repository-layout)
-- [Resources](#resources)
-- [Buy](#buy)
+- [About](#about)
+- [Versions](#versions)
+- [AM201Q240296LK1](#am201q240296lk1)
+- [How to Switch Branches](#how-to-switch-branches)
+- [Where to Buy](#where-to-buy)
 - [Support](#support)
 
 ---
 
-## Branches
+## About
 
-This repository uses one branch per part number. The **default branch** is the navigation page [`main`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/main); full product materials live on each part-number branch.
+This repository holds materials for the **2.01″ 240×296 AMOLED (QSPI · ICNA3306)** module family.
 
-| Model | Branch | Notes |
-| ----- | ------ | ----- |
-| — | [`main`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/main) | Multi-SKU index (repo default) |
-| AM201Q240296LK1 | [`AM201Q240296LK1`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/AM201Q240296LK1) | **This branch** · module |
+**`main` is the navigation page** (repository default). Use the table below for a quick scan; click **Details** to jump to the section on this page. For a given version’s full content, switch to that **version branch** (see below).
+
+Repo id: `2.01-amoled-240x296-qspi-icna3306`
 
 ---
 
-## Overview
+## Versions
 
-OSPTEK **2.01″ 240×296 AMOLED** is a **QSPI** color display module driven by **ICNA3306**, with capacitive touch (**CST816D**). Suited to handheld devices, wearables, and compact portrait HMI.
+| Version | Image | Notes |
+| ------- | ----- | ----- |
+| AM201Q240296LK1 | <img alt="AM201Q240296LK1" src="./images/AM201Q240296LK1.png" width="120" /> | [Details](#am201q240296lk1) |
 
-Spec ID (repository name): `2.01-amoled-240x296-qspi-icna3306`
+---
 
-Current module version: **AM201Q240296LK1**. Electrical and mechanical details follow [`docs/AM_201_Q240296_LK_1_a3e5aef203.pdf`](./docs/AM_201_Q240296_LK_1_a3e5aef203.pdf).
+## AM201Q240296LK1
 
-## Specifications
+<p align="center"><img alt="AM201Q240296LK1" src="./images/AM201Q240296LK1.png" width="320" /></p>
 
-| Item | Spec |
-| ---- | ---- |
-| Size | 2.01 inch |
-| Type | AMOLED (color) |
-| Resolution | 240×296 |
-| Interface | QSPI |
-| Driver IC | ICNA3306 |
-| Touch driver | CST816D |
+**Notes:** Module.
 
-> Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
+---
 
-## Sample projects
+## How to Switch Branches
 
-| Description | Path |
-| ---- | ---- |
-| ESP32-S3 · ICNA3306 QSPI + esp-lvgl-adapter / LVGL8 | [`examples/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl8/`](./examples/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl8/) |
-| ESP32-S3 · ICNA3306 QSPI + esp-lvgl-adapter / LVGL9 | [`examples/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl9/`](./examples/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl9/) |
-| ESP32-S3 · LVGL8 + TE | [`examples/with-te/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl8_amoled-with-te/`](./examples/with-te/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl8_amoled-with-te/) |
-| ESP32-S3 · LVGL9 + TE | [`examples/with-te/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl9_amoled-with-te/`](./examples/with-te/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl9_amoled-with-te/) |
-| ESP32-S3 · LVGL8 + TE + software rotate 90° | [`examples/with-te-sw-rotate-90/esp32s3-idf5_icna3306-qspi_lvgl8_amoled-with-te/`](./examples/with-te-sw-rotate-90/esp32s3-idf5_icna3306-qspi_lvgl8_amoled-with-te/) |
+Full product materials are on each **version branch**; `main` is navigation only.
 
-## Repository layout
+- **Web:** open the branch dropdown at the top left of the repository page and select the branch that matches your part number.
+- **CLI:** after cloning, run `git checkout <version-branch>`; if the repo is already local, `git fetch` first, then switch.
 
-```text
-2.01-amoled-240x296-qspi-icna3306/
-├── README.md
-├── README_EN.md
-├── LICENSE
-├── images/          # README assets
-├── docs/            # datasheets, init, adapter board
-└── examples/        # sample projects
-```
+---
 
-## Resources
-
-### Product files
-
-| Resource | Link |
-| ---- | ---- |
-| Product datasheet (AM201Q240296LK1) | [`docs/AM_201_Q240296_LK_1_a3e5aef203.pdf`](./docs/AM_201_Q240296_LK_1_a3e5aef203.pdf) |
-| Driver IC datasheet (ICNA3306) | [`docs/ICNA_3306_Datasheet_release_V0_03_20211008_2_966e953f85.pdf`](./docs/ICNA_3306_Datasheet_release_V0_03_20211008_2_966e953f85.pdf) |
-| Touch IC datasheet (CST816D) | [`docs/CST_816_D_V1_0_2_1b06dfb078.pdf`](./docs/CST_816_D_V1_0_2_1b06dfb078.pdf) |
-| Init sequence (text) | [`docs/ICNA3306_201_240X296_SPI_简码 20231208.txt`](./docs/ICNA3306_201_240X296_SPI_%E7%AE%80%E7%A0%81%2020231208.txt) |
-| 2.01″ AMOLED adapter board (V1.0) | [`docs/2.01_AMOLED转接板V1.0_2025-05-22.pdf`](./docs/2.01_AMOLED%E8%BD%AC%E6%8E%A5%E6%9D%BFV1.0_2025-05-22.pdf) |
-| Connector datasheet (OK-14F024-04) | [`docs/OK-14F024-04.pdf`](./docs/OK-14F024-04.pdf) |
-
-### Samples
-
-- [ESP32-S3 ICNA3306 QSPI + LVGL8](./examples/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl8/)
-- [ESP32-S3 ICNA3306 QSPI + LVGL9](./examples/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl9/)
-- [ESP32-S3 LVGL8 + TE](./examples/with-te/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl8_amoled-with-te/)
-- [ESP32-S3 LVGL9 + TE](./examples/with-te/esp32s3-idf5_icna3306-qspi_esp-lvgl-adapter_lvgl9_amoled-with-te/)
-- [ESP32-S3 LVGL8 + TE + software rotate 90°](./examples/with-te-sw-rotate-90/esp32s3-idf5_icna3306-qspi_lvgl8_amoled-with-te/)
-
-## Buy
+## Where to Buy
 
 <p align="center">
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress store" src="https://img.shields.io/badge/AliExpress-Official_Store-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress Official Store" src="https://img.shields.io/badge/AliExpress-Official_Store-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
   &nbsp;&nbsp;
-  <a href="https://shop110742373.taobao.com/"><img alt="Taobao store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
+  <a href="https://shop110742373.taobao.com/"><img alt="Taobao Official Store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
 </p>
 
-**Overseas (AliExpress)**
+**International (AliExpress)**
 
 - Store: [OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
 
@@ -119,13 +75,15 @@ Current module version: **AM201Q240296LK1**. Electrical and mechanical details f
 
 - Store: [鱼鹰光电工厂店](https://shop110742373.taobao.com/)
 
+---
+
 ## Support
 
-- Technical support / product inquiry: <luyu@osptek.com>
-- QQ group: **985881096**
+- Technical Support / Sales: <luyu@osptek.com>
+- QQ Technical Group: **985881096**
 - Website: <https://osptek.com/>
-- Feel free to open an Issue in this repository with any questions
+- Feel free to open an Issue in this repository if you have any questions
 
 ---
 
-<p align="center"><sub>© 2026 OSPTEK · Materials in this repository are licensed under CC BY 4.0</sub></p>
+<p align="center"><sub>© 2026 OSPTEK · Licensed under CC BY 4.0</sub></p>
