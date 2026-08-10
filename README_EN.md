@@ -17,6 +17,7 @@
 
 ## Contents
 
+- [Branches](#branches)
 - [Overview](#overview)
 - [Specifications](#specifications)
 - [Sample projects](#sample-projects)
@@ -24,6 +25,17 @@
 - [Resources](#resources)
 - [Buy](#buy)
 - [Support](#support)
+
+---
+
+## Branches
+
+This repository uses one branch per part number. The **default branch** is the navigation page [`main`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/main); full product materials live on each part-number branch.
+
+| Model | Branch | Notes |
+| ----- | ------ | ----- |
+| — | [`main`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/main) | Multi-SKU index (repo default) |
+| AM201Q240296LK1 | [`AM201Q240296LK1`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/AM201Q240296LK1) | **This branch** · module |
 
 ---
 
@@ -64,7 +76,6 @@ Current module version: **AM201Q240296LK1**. Electrical and mechanical details f
 2.01-amoled-240x296-qspi-icna3306/
 ├── README.md
 ├── README_EN.md
-├── MODULE_VERSION.md
 ├── LICENSE
 ├── images/          # README assets
 ├── docs/            # datasheets, init, adapter board

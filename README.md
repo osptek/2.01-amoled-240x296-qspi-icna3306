@@ -17,6 +17,7 @@
 
 ## 目录
 
+- [分支介绍](#分支介绍)
 - [产品简介](#产品简介)
 - [规格参数](#规格参数)
 - [示例工程](#示例工程)
@@ -24,6 +25,17 @@
 - [相关资料](#相关资料)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
+
+---
+
+## 分支介绍
+
+本仓库按料号分为多个分支。**仓库默认分支**为导航页 [`main`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/main)（不绑定单一料号）；完整产品资料在各料号分支。
+
+| 型号 | 分支 | 说明 |
+| ---- | ---- | ---- |
+| — | [`main`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/main) | 多料号导航（仓库默认分支） |
+| AM201Q240296LK1 | [`AM201Q240296LK1`](https://github.com/osptek/2.01-amoled-240x296-qspi-icna3306/tree/AM201Q240296LK1) | **本分支** · 模组 |
 
 ---
 
@@ -64,7 +76,6 @@ OSPTEK **2.01 寸 240×296 AMOLED** 是一款 **QSPI** 接口彩色显示模组�
 2.01-amoled-240x296-qspi-icna3306/
 ├── README.md
 ├── README_EN.md
-├── MODULE_VERSION.md
 ├── LICENSE
 ├── images/          # README 用图
 ├── docs/            # 规格书、驱动手册、初始化、转接板等
