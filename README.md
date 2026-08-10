@@ -46,8 +46,7 @@
 
 <p align="center"><img alt="AM201Q240296LK1" src="./images/AM201Q240296LK1.png" width="320" /></p>
 
-**说明：** 模组。
-
+**说明：** 带触摸（CST816D）。
 ---
 
 ## 如何切换分支
